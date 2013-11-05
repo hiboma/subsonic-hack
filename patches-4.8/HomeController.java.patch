@@ -1,0 +1,11 @@
+--- subsonic-main.org/src/main/java/net/sourceforge/subsonic/controller/HomeController.java	2013-04-15 06:18:38.000000000 +0900
++++ subsonic-main/src/main/java/net/sourceforge/subsonic/controller/HomeController.java	2013-11-05 12:16:59.000000000 +0900
+@@ -52,7 +52,7 @@
+ 
+     private static final Logger LOG = Logger.getLogger(HomeController.class);
+ 
+-    private static final int DEFAULT_LIST_SIZE = 15;
++    private static final int DEFAULT_LIST_SIZE = 50;
+     private static final int MAX_LIST_SIZE = 500;
+     private static final int DEFAULT_LIST_OFFSET = 0;
+     private static final int MAX_LIST_OFFSET = 5000;

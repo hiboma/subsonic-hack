@@ -1,0 +1,19 @@
+--- subsonic-main.org/src/main/webapp/WEB-INF/jsp/home.jsp	2012-05-31 04:08:21.000000000 +0900
++++ subsonic-main/src/main/webapp/WEB-INF/jsp/home.jsp	2013-11-05 12:18:03.000000000 +0900
+@@ -93,7 +93,7 @@
+                             <c:import url="coverArt.jsp">
+                                 <c:param name="albumId" value="${album.id}"/>
+                                 <c:param name="albumName" value="${album.albumTitle}"/>
+-                                <c:param name="coverArtSize" value="110"/>
++                                <c:param name="coverArtSize" value="200"/>
+                                 <c:param name="showLink" value="true"/>
+                                 <c:param name="showZoom" value="false"/>
+                                 <c:param name="showChange" value="false"/>
+@@ -127,6 +127,7 @@
+                             <c:otherwise>
+                                 <div class="detail"><em><str:truncateNicely lower="15" upper="15">${album.artist}</str:truncateNicely></em></div>
+                                 <div class="detail"><str:truncateNicely lower="15" upper="15">${album.albumTitle}</str:truncateNicely></div>
++                                <a href="javascript:void(0);" onclick="top.playQueue.onPlay(${album.id});"><fmt:message key="main.playall"/></a>
+                             </c:otherwise>
+                         </c:choose>
+ 
